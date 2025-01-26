@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Route Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Eco Route Finder</h2>
+        <form id="routeForm" action="/route" method="POST">
+            <label for="origin">Origin:</label>
+            <input type="text" id="origin" name="start" placeholder="Enter starting point" required>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="end" placeholder="Enter destination" required>
+            <button type="submit">Find Eco Route</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
