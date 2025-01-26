@@ -3,15 +3,10 @@
 
 ## Basic Details
 ### Team Name: Sreelakshmi S K
-
-
-### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+College-Marian Engineering College
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+https://github.com/sreelakshmi-06/eco-route-finder
 
 ### Project Description
 Eco route finder is a web application which promotes eco-travel by helping users to identify routes and modes of transportation with minimal ecological impact.This application integrates live route data,user preferences and eco-metrics to recommend travel option that reduce carbon footprints while maintaining convenience.
@@ -152,54 +147,45 @@ Copy
 Edit
 pytest
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+Workflow/Architecture
+1. User Interaction
+Users interact with the web application through the frontend (HTML/CSS/JavaScript).
+They submit preferences, such as the mode of transport and destination.
+2. Backend Processing
+The backend, built with Flask, handles the user request and:
+Processes input data.
+Fetches or calculates route options using algorithms based on eco-metrics (e.g., emissions, distance, time).
+3. Database Operations
+User data, preferences, routes, and eco-metrics are stored and retrieved from the database (SQLite or MySQL).
+The backend uses SQLAlchemy ORM for seamless database interaction.
+4. Eco-Metrics Calculation
+Based on route data, the backend computes eco-metrics like carbon savings, fuel efficiency, and alternative route comparisons.
+This data is dynamically prepared for presentation.
+5. Frontend Response
+The backend sends route options and eco-metrics to the frontend via API responses.
+The frontend renders these options, highlighting the most eco-friendly routes with visuals (charts, icons).
+6. Feedback Loop
+Users can update preferences or provide feedback on routes.
+The system refines suggestions over time based on user patterns and input.
+Components in the Architecture
+Frontend:
 
-For Hardware:
+Browser: Displays the app to users.
+Static Files: HTML, CSS, JavaScript.
+Backend:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+Flask Framework: Handles routing, API creation, and business logic.
+Database:
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+SQLite/MySQL: Stores user preferences, route data, and metrics.
+Optional Components:
 
-# Build Photos
-![Team](Add photo of your team here)
+External APIs: For live traffic or route data (e.g., Google Maps API).
+Visualization Libraries: Like Chart.js for eco-metrics presentation.
 
 
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
 
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
----
 Made with ❤️ at TinkerHub
